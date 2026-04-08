@@ -1,20 +1,17 @@
-"use client";
 import { Globe, Link2, Share2 } from "lucide-react";
+import Image from "next/image";
 
 function PayBookLogoSmall() {
   return (
     <div className="flex items-center gap-2">
-      <div className="relative w-7 h-7">
-        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-          <circle cx="18" cy="10" r="5" fill="#1A8FE3" />
-          <path
-            d="M13 19 L13 35 M13 19 C13 19 22 17 23 24 C24 28 18 30 13 28"
-            stroke="#1A8FE3"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            fill="none"
-          />
-        </svg>
+      <div className="relative w-8 h-8 rounded-lg overflow-hidden border border-slate-200 shadow-sm">
+        <Image 
+          src="/clientLogo.jpg" 
+          alt="PayBook" 
+          width={32} 
+          height={32} 
+          className="w-full h-full object-cover"
+        />
       </div>
       <span className="font-syne font-bold text-lg text-brand-navy">
         Pay<span className="text-brand-blue">Book</span>
@@ -27,7 +24,7 @@ const footerLinks = {
   Product: ["Features", "Modules", "Pricing", "Changelog", "Roadmap"],
   Company: ["About Us", "Careers", "Blog", "Press Kit", "Partners"],
   Resources: ["Documentation", "API Reference", "Status Page", "Community", "Support"],
-  Contact: ["hello@paybook.in", "+91 90000 12345", "Pune, Maharashtra", "Sales Inquiry", "Partnership"],
+  Contact: ["unitysoftech@gmail.com", "+91 93222 98156", "Pune, Maharashtra, India", "Sales Inquiry", "Partnership"],
 };
 
 export default function Footer() {

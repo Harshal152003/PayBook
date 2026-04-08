@@ -38,6 +38,7 @@ const config: Config = {
         "count-up": "countUp 2s ease-out forwards",
         "gradient-x": "gradientX 4s ease infinite",
         "pulse-glow": "pulseGlow 2s ease-in-out infinite",
+        "pulse-slow": "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "dash": "dash 2s linear infinite",
         "spin-slow": "spin 8s linear infinite",
       },

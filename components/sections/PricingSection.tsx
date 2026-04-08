@@ -83,17 +83,17 @@ export default function PricingSection() {
 
                 <div>
                   <span className="text-3xl">{plan.emoji}</span>
-                  <h3 className="font-syne font-extrabold text-2xl text-brand-navy mt-2">
+                  <h3 className="font-syne font-extrabold text-3xl text-brand-navy mt-2">
                     {plan.name}
                   </h3>
-                  <p className="font-dm text-sm text-slate-500 mt-1">{plan.tagline}</p>
+                  <p className="font-dm text-[15px] text-slate-500 mt-1">{plan.tagline}</p>
                 </div>
 
-                <ul className="flex flex-col gap-3 flex-1">
+                <ul className="flex flex-col gap-4 flex-1">
                   {plan.features.map((f) => (
-                    <li key={f} className="flex items-start gap-3">
-                      <Check size={15} className="text-brand-cyan mt-0.5 shrink-0" />
-                      <span className="font-dm text-sm font-medium text-slate-600">{f}</span>
+                    <li key={f} className="flex items-start gap-4">
+                      <Check size={18} className="text-brand-cyan mt-1 shrink-0" />
+                      <span className="font-dm text-base font-medium text-slate-600">{f}</span>
                     </li>
                   ))}
                 </ul>

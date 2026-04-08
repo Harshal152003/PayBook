@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Syne, DM_Sans } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const syne = Syne({
+const headingFont = Outfit({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-syne",
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const bodyFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-dm-sans",
@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${syne.variable} ${dmSans.variable} font-dm bg-brand-light text-brand-slate antialiased`}
+        className={`${headingFont.variable} ${bodyFont.variable} font-dm bg-brand-light text-brand-slate antialiased`}
       >
         {children}
       </body>
